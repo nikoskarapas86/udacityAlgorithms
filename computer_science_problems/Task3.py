@@ -44,3 +44,26 @@ Print the answer as a part of a message::
 to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 """
+#################################################A####################################
+
+# time complexity O(n+n +1+1+1)  --> O(n) while space complexity is Also O(n)
+
+bangalore_phones = [phoneItem[1] for phoneItem in calls if phoneItem[0].startswith("(080)")]#O(n)
+print(bangalore_phones)
+codes =[]
+for phone in bangalore_phones:#O(n)
+    if ')' in phone:#O(1)
+       codes.append(phone[:phone.find(')') + 1].replace('(', '').replace(')', ''))#O(1)
+    else:
+        codes.append(phone[0:4] )#O(1)
+codes = list(set(codes))   #O(1)    
+print('The numbers called by people in Bangalore have codes:\n' + '\n'.join(codes))
+
+#################################################B####################################
+print('{0:.2f}'.format(#O(n)
+    (len([phone for phone in bangalore_phones if "(080)"in phone]) / len(bangalore_phones)) * 100),
+    'percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.')
+
+
+
+
