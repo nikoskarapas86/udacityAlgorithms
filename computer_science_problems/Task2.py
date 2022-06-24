@@ -21,14 +21,19 @@ Print a message:
 "<telephone number> spent the longest time, <total time> seconds, on the phone during 
 September 2016.".
 """
-#time complexity is O(n) while space complexity is O(1)
-def findLongestCall(calls): 
-    longestPhone =[]
-    for item in calls:
-        if len(longestPhone) == 0 or item[3] > longestPhone[3]:
-            longestPhone =item
-    s = "{} spent the longest time, {} seconds, on the phone during September 2016.".format(str(longestPhone[0]),str(longestPhone[3]))
-    return s
+mapper ={}  #O(1)
+for getter, reciever, timest, duration in calls:  # O(n)
+    if getter not in mapper:  # O(1)
+        mapper[getter] = int(duration)  # O(1)
+    else:
+        mapper[getter] += int(duration)  # O(1)
 
+    # Receiver telephone
+    if reciever not in mapper:  # O(1)
+        mapper[reciever] = int(duration)  # O(1)
+    else:
+        mapper[reciever] += int(duration)  # O(1)
 
-print(findLongestCall(calls))
+print('%s spent the longest time, %s seconds, on the phone during'
+      ' September 2016.' % ((max(mapper.items(), key=lambda it: it[1]))[0], (max(mapper.items(), key=lambda x: x[1]))[1]))#O(n)
+
