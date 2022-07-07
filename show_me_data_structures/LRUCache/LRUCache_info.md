@@ -15,3 +15,10 @@
 ## That would make your user’s system sluggish
 
 ## and put extra pressure on the server hosting the articles.
+
+## Time Complexity:
+
+this solution is a combination of `Hashtable` and `DoublyLinkedList` because:
+
+1. inserting and deleting items in DoubleLinkedList is very fast
+2. time complexity in look up in Dictionaries will always be constant time `O(1)`
