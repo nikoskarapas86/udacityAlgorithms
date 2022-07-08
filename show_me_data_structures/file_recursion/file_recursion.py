@@ -19,7 +19,7 @@ def find_files(suffix, path):
     return files
 
 
-path_base = os.getcwd() + \
+path = os.getcwd() + \
     "/Desktop/algorithmsUdacityNanoDegree/show_me_data_structures/file_recursion/testdir"
 
-print(find_files(suffix='c', path=path_base))
+print(find_files(suffix='c', path=path))
