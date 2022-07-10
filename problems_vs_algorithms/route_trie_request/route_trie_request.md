@@ -14,4 +14,14 @@
 
 ## lets suppose that we have `n` words that each on consisted of `m` length of characters
 
-## Time complexity for these operations `O(n*m)`
+## Time complexity for these operations `O(n\*m)
+
+## more spesifically :
+
+# method insert in class RouteTrie takes time complexity O(n) and space complexity O(1) while method insert in RouteTrieNode takes time complexity O( 1) space complexity O(1)
+
+# method find takes time complexity O(n) andspace complexity O(1)
+
+# method add_handler time complexity O(1) space complexity O(1)
+
+# method lookup time complexity O(n +n)=> O(n) thats due to split_path method and find method so overall time complexity is the addition of n+ n => n space complexity O(1)

@@ -1,7 +1,11 @@
+# time complexity O(1) constant time space complexity O(1)
+
 def change_position(arr, firstIndex, secondIndex):
     temp = arr[firstIndex]
     arr[firstIndex] = arr[secondIndex]
     arr[secondIndex] = temp
+
+# time complexity O( n) space complexity O(1)
 
 
 def sort_012(list012):

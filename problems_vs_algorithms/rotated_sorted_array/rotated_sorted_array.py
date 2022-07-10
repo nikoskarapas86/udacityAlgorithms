@@ -28,6 +28,8 @@ def rotated_array_search(input_list, number):
             finding = binary_search(start, pivot-1, input_list, number)
     return finding
 
+# time complexity O(n) space complexity O(1)
+
 
 def find_pivot(start, end, inputList):
     mid = start + (end - start) // 2
@@ -40,6 +42,8 @@ def find_pivot(start, end, inputList):
         else:
             pivot = find_pivot(mid+1, end, inputList)
     return pivot
+
+# time complexity O(nlogn) space complexity O(n)
 
 
 def binary_search(start, end, inputList, target):
@@ -54,6 +58,8 @@ def binary_search(start, end, inputList, target):
             else:
                 end = middle - 1
     return -1
+
+# time complexity O(n) space complexity O(1)
 
 
 def linear_search(input_list, number):

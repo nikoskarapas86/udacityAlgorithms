@@ -1,7 +1,7 @@
+# time complexity O(nlog n) space complexity O(n)
 def sqrt(number):
     if number in [0, 1]:
         return number
-     # Do Binary Search
     start = 1
     end = number
     while (start <= end):

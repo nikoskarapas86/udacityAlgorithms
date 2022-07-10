@@ -9,3 +9,5 @@
 ## Time complexity:
 
 ## Total: `O(nlogn + n)` => `O(nlog(n))`
+
+## mergeSort takes `O(nlog(n))` time complexity and `O(n)` space complexity

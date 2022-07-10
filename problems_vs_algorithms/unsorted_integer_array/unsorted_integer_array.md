@@ -8,4 +8,6 @@
 
 ## finally we return them as tupple
 
-## Time complexity => `O(n)` due to one single itteration
+## Time complexity => `O(n)` due to one single iteration
+
+## space complexity => `O(1)` we don't create variables in for loop
