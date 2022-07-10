@@ -91,7 +91,9 @@ router1.add_handler("/another/test", "about test handler")  # add a route
 print(router1.lookup("/another"))
 print(router1.lookup("/another/"))
 print(router1.lookup("/another/test"))
+# edge cases
 print("test case 5")
-router1 = Router(None, "not found another handler")
+router1 = Router(None, "not found ")
 router1.add_handler("/test", "something happened")
 print(router1.lookup("/test"))
+print(router1.lookup("/abc"))

@@ -2,6 +2,7 @@ import random
 
 
 def get_min_max(ints):
+
     if len(ints) == 0:
         return (0, 0)
     minNumber = ints[0]
@@ -25,8 +26,13 @@ l = [i for i in range(-23, -2)]
 random.shuffle(l)
 print("Pass" if ((-23, -3) == get_min_max(l)) else "Fail")
 
-print("test case 3")
-print("Pass" if ((0, 0) == get_min_max([])) else "Fail")
 
-print("test case 4")
+print("test case 3")
 print("Pass" if ((-1, 100) == get_min_max([-1, 1, 2, 3, 4, 100])) else "Fail")
+
+# edge cases
+l = [i for i in range(200, 201)]
+random.shuffle(l)
+print("Pass" if ((200, 200) == get_min_max(l)) else "Fail")
+
+print("Pass" if ((0, 0) == get_min_max([])) else "Fail")

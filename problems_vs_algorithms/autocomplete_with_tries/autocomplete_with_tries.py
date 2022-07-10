@@ -70,6 +70,7 @@ prefix = 'f'
 prefixNode = MyTrie.find(prefix)
 print("Prefix: '{}'".format(prefix))
 print(prefixNode.suffixes())
+# edge case
 print("Test Case 4 edge case")
 prefix2 = '111'
 prefixNode = MyTrie.find(prefix2)
