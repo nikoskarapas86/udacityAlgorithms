@@ -19,3 +19,11 @@
 ## then we create two subArrays
 
 ## then we use binarySearch to find the target number in each subArray . time complexity for the solution is `O(log n)`
+
+## As for space complexity rotated_array_search requires `(1)` space compexity
+
+## find_pivot requires `(1)` space compexity
+
+## binary_search requires `(n)` space compexity
+
+## linear_search requires `(n)` space compexity

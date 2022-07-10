@@ -4,7 +4,7 @@
 
 ## first we should sort the array Sorting: `O(nlog(n))` // for using mergesort
 
-## and construct two numbers by picking alternating digits at odd indices and the even indices of the sorted array. in one for loops: `O(n)`
+## and construct two numbers by picking alternating digits at odd indices and the even indices of the sorted array. in one for loops: `O(n)` and space compexity `O(1)`
 
 ## Time complexity:
 

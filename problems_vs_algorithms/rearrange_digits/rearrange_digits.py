@@ -26,6 +26,8 @@ def rearrange_digits(input_list):
 
     return [firstNumber, secondNumber]
 
+# `O(nlog(n))` time complexity and `O(n)` space complexity
+
 
 def mergeSort(list):
     if len(list) <= 1:
@@ -65,3 +67,5 @@ def test_function(test_case):
 
 test_function([[1, 2, 3, 4, 5], [542, 31]])
 test_function([[4, 6, 2, 5, 9, 8], [964, 852]])
+test_function([[0, 0, 0, 0, 0, 0, 0, 0], [0, 0]])
+test_function([[1, 1, 1, 1], [11, 11]])

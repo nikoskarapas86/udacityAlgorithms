@@ -8,4 +8,4 @@
 
 ## method change_position requires time complexity O(1) constant time and space complexity O(1)
 
-## method sort_012 requires time complexity O( n) andspace complexity O(1)
+## method sort_012 requires time complexity O( n) and space complexity O(1)

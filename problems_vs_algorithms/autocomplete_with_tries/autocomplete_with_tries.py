@@ -42,7 +42,7 @@ class Trie:
             if character in node.children:
                 node = node.children[character]
             else:
-                return None
+                return TrieNode()
         return node
 
 
@@ -54,15 +54,24 @@ wordList = [
 ]
 for word in wordList:
     MyTrie.insert(word)
-
+print("Test Case 0 edge case")
+prefix = ''
+prefixNode = MyTrie.find(prefix)
+print("Prefix: '{}'".format(prefix))
+print(prefixNode.suffixes())
 print("Test Case 1")
 prefix = 'an'
 prefixNode = MyTrie.find(prefix)
 print("Prefix: '{}'".format(prefix))
 print(prefixNode.suffixes())
 
-print("Test Case ")
+print("Test Case 2 ")
 prefix = 'f'
 prefixNode = MyTrie.find(prefix)
 print("Prefix: '{}'".format(prefix))
+print(prefixNode.suffixes())
+print("Test Case 4 edge case")
+prefix2 = '111'
+prefixNode = MyTrie.find(prefix2)
+print("Prefix: '{}'".format(prefix2))
 print(prefixNode.suffixes())
