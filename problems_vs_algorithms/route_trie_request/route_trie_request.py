@@ -1,21 +1,21 @@
 class RouteTrieNode:
-    # time complexity O( 1) space complexity O(1)
+    # time complexity O( 1) space complexity O(1)   1
     def __init__(self):
         self.children = {}
         self.handler = None
-# time complexity O( 1) space complexity O(1)
+# time complexity O( 1) space complexity O(1)  2
 
     def insert(self, path):
         self.children[path] = RouteTrieNode()
 
 
 class RouteTrie:
-    # time complexity O( 1) space complexity O(1)
+    # time complexity O( 1) space complexity O(1)  3
     def __init__(self, handler, error):
         self.root = RouteTrieNode()
         self.root.handler = handler
         self.error = error
-# time complexity O(n) space complexity O(1)
+# time complexity O(n) space complexity O(1)  4
 
     def insert(self, listOfPaths, handler):
         if listOfPaths == []:
@@ -27,7 +27,7 @@ class RouteTrie:
             node = node.children[path]
         node.handler = handler
         return True
-# time complexity O(n) space complexity O(1)
+# time complexity O(n) space complexity O(1)  5
 
     def find(self, path_list):
         if len(path_list) == 0:
@@ -49,20 +49,20 @@ class RouteTrie:
 
 
 class Router:
-    # time complexity O( 1) space complexity O(1)
+    # time complexity O( 1) space complexity O(1)  6
     def __init__(self, handler=None, error=None):
         self.root = RouteTrie(handler, error)
-# time complexity O(1) space complexity O(1)
+# time complexity O(1) space complexity O(1)  7
 
     def add_handler(self, path, handler):
         path_list = self.split_path(path)
         return self.root.insert(path_list, handler)
-# time complexity O(n) space complexity O(1)
+# time complexity O(n) space complexity O(1)  8
 
     def lookup(self, path):
         path_list = self.split_path(path)
         return self.root.find(path_list)
-# time complexity O(n) space complexity O(1)
+# time complexity O(n) space complexity O(1)  9
 
     def split_path(self, path):
         if path == "":

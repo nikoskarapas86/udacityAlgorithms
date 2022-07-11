@@ -18,20 +18,40 @@
 
 ## more spesifically :
 
+# 1
+
 # method insert() in class RouteTrie takes time complexity O(n) and space complexity O(1) while
+
+# 2
 
 # method insert() in RouteTrieNode takes time complexity O( 1) space complexity O(1)
 
+# 3
+
 # method find() takes time complexity O(n) and space complexity O(1)
+
+# 4
 
 # method add_handler() time complexity O(1) space complexity O(1)
 
+# 5
+
 # method lookup() time complexity O(n +n)=> O(n) thats due to split_path method and find method so overall time complexity is the addition of n+ n => n space complexity O(1)
+
+# 6
 
 # method split_path() takes O(n + n) => O(n) time complexity that sdue to diferent python methods strip() and split() , each one of them takes O(n) time complexity and O(1) space complexity .Finally the space complexity will be O(1)
 
 # time complexity and space complexity for both init methods woul be O(1) [for time and space complexity]
 
+# 7
+
 ## init() method in Router class takes `O(1)` time complexity and space complexity will be `O(1)`
 
+# 8
+
 ## init() method in RouteTrieNode class takes `O(1)` time complexity and space complexity will be `O(1)`
+
+# 9
+
+## init() method in RouteTrie class takes `O(1)` time complexity and space complexity will be `O(1)`
