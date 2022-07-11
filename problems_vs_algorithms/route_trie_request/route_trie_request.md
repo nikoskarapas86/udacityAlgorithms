@@ -29,3 +29,5 @@
 # method split_path() takes O(n + n) => O(n) time complexity that sdue to diferent python methods strip() and split() , each one of them takes O(n) time complexity and O(1) space complexity .Finally the space complexity will be O(1)
 
 # time complexity and space complexity for both init methods woul be O(1) [for time and space complexity]
+
+## both **init**(), in Router class and in RouteTrieNode class methods takes `O(1)` time complexity and space complexity will be `O(1)`
