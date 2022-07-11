@@ -1,5 +1,6 @@
 
 class TrieNode:
+    # time complexity will be `O(1)` space complexity will be `O(1)`
     def __init__(self):
         self.is_word = False
         self.children = {}
@@ -26,6 +27,7 @@ class TrieNode:
 
 
 class Trie:
+    # time complexity will be `O(1)` space complexity will be `O(1)`
     def __init__(self):
         self.root = TrieNode()
 # time complexity will be `O(n)` space complexity will be `O(1)`

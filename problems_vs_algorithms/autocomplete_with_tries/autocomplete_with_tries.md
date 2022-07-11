@@ -13,3 +13,5 @@
 ## the insert method in TreeNode class requiers `O(1)` tmie complexity and `O(1)` space complexity
 
 ## The .insert() method iterates on each word with a for loop.the time complexity will be `O(n)` space complexity will be `O(1)`
+
+## both **init**(), in TrieNode class and in Trie class methods takes `O(1)` time complexity and space complexity will be `O(1)`
