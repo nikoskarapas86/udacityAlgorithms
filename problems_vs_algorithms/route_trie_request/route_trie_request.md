@@ -18,7 +18,9 @@
 
 ## more spesifically :
 
-# method insert() in class RouteTrie takes time complexity O(n) and space complexity O(1) while method insert() in RouteTrieNode takes time complexity O( 1) space complexity O(1)
+# method insert() in class RouteTrie takes time complexity O(n) and space complexity O(1) while
+
+# method insert() in RouteTrieNode takes time complexity O( 1) space complexity O(1)
 
 # method find() takes time complexity O(n) and space complexity O(1)
 
@@ -30,4 +32,6 @@
 
 # time complexity and space complexity for both init methods woul be O(1) [for time and space complexity]
 
-## both **init**(), in Router class and in RouteTrieNode class methods takes `O(1)` time complexity and space complexity will be `O(1)`
+## init() method in Router class takes `O(1)` time complexity and space complexity will be `O(1)`
+
+## init() method in RouteTrieNode class takes `O(1)` time complexity and space complexity will be `O(1)`
