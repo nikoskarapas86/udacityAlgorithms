@@ -20,6 +20,6 @@
 
 ## The time complexity of the binary search is O(log n).
 
-## Space Complexity: O(n).
+## Space Complexity: O(1).
 
 ## Constant extra space is needed.

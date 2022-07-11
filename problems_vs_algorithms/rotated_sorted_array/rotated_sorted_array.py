@@ -43,7 +43,7 @@ def find_pivot(start, end, inputList):
             pivot = find_pivot(mid+1, end, inputList)
     return pivot
 
-# time complexity O(nlogn) space complexity O(n)
+# time complexity O(nlogn) space complexity O(1)
 
 
 def binary_search(start, end, inputList, target):

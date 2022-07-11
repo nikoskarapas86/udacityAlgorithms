@@ -1,6 +1,7 @@
 import random
 
 
+# time complexity O(n) and space complexity O(1)
 def get_min_max(ints):
 
     if len(ints) == 0:

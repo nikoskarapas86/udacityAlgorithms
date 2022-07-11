@@ -10,4 +10,6 @@
 
 ## the above method will return a list of correspondent suffixes.
 
+## the insert method in TreeNode class requiers `O(1)` tmie complexity and `O(1)` space complexity
+
 ## The .insert() method iterates on each word with a for loop.the time complexity will be `O(n)` space complexity will be `O(1)`

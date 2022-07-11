@@ -3,6 +3,7 @@ class TrieNode:
     def __init__(self):
         self.is_word = False
         self.children = {}
+# time complexity will be `O(n)` space complexity will be `O(1)`
 
     def suffixes(self, suffix=''):
         if self.children is None:
@@ -18,6 +19,7 @@ class TrieNode:
                 suffix + character)
 
         return suffixes
+# O(1) time complexity and O(1) space complexity
 
     def insert(self, character):
         self.children[character] = TrieNode()
@@ -26,6 +28,7 @@ class TrieNode:
 class Trie:
     def __init__(self):
         self.root = TrieNode()
+# time complexity will be `O(n)` space complexity will be `O(1)`
 
     def insert(self, word):
         current_node = self.root
@@ -35,6 +38,7 @@ class Trie:
                 current_node.insert(character)
             current_node = current_node.children[character]
         current_node.is_word = True
+# complexity will be `O(n)` space complexity will be `O(1)`
 
     def find(self, prefix):
         node = self.root
