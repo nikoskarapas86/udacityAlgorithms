@@ -20,7 +20,7 @@
 
 ## then we use binarySearch to find the target number in each subArray . time complexity for the solution is `O(log n)`
 
-## As for space complexity rotated_array_search requires `O(n)` space compexity
+## As for space complexity rotated_array_search requires `O(logn)` because we recursivly call binary search
 
 ## find_pivot requires `O(1)` time compexity and `O(n)` space complexity
 
