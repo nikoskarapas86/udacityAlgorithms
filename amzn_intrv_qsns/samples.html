@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+  </body>
+  <script>
+    //1. time complexity O(n) space complexity O(1)
+    function findMIssintNumber(arr) {
+      let n = arr.length + 1
+      physicalSum = n * (n + 1) / 2
+      actualSum = 0
+      for (let num of arr) {
+        actualSum += num
+      }
+      return physicalSum - actualSum
+    }
+
+    // 2. Determine if the sum of two integers is equal to the given value
+    //Runtime Complexity: Linear, O(n)
+    // Memory Complexity: Linear, O(n) 
+    function find_sum_of_two(arr, val) {
+      let foundValues = new Set();
+      for (let item in arr) {
+        if (foundValues.has(val - arr[item])) {
+          return true;
+        }
+
+        foundValues.add(arr[item]);
+      }
+      console.log(foundValues)
+      return false
+    }
+    let v = [5, 7, 1, 2, 8, 4, 3];
+    console.log(find_sum_of_two(v, 12))
+
+
+
+
+  </script>
+
+</html>
