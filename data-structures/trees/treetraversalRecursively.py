@@ -45,6 +45,9 @@ def pre_order(tree):
             visit_order.append(node.get_value())
             traverse(node.get_left_child())
             traverse(node.get_right_child())
+    traverse(tree.get_root())
+    return visit_order
+
 # in order traversion
 
 
@@ -56,7 +59,8 @@ def in_order(tree):
             traverse(node.get_left_child())
             visit_order.append(node.get_value())
             traverse(node.get_right_child())
-
+    traverse(tree.get_root())
+    return visit_order
 # post order traversion
 
 
@@ -68,3 +72,5 @@ def post_order(tree):
             traverse(node.get_left_child())
             traverse(node.get_right_child())
             visit_order.append(node.get_value())
+    traverse(tree.get_root())
+    return visit_order
